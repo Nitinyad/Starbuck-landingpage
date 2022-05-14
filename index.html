@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbucks</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="logo.png">
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <img src="logo.png" class="logo" >
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">What's new</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="text">
+                <h1>It's just not Coffee It's <span>Starbucks</span></h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores quas optio ratione quae earum eligendi quaerat, velit consequuntur quidem quia voluptate vitae suscipit enim dolorum, accusantium, similique non libero soluta ab ipsum numquam dolore.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div class="imgbig">
+                    <img src="img1.png" class="imgbig starbucks">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="thumb1.png" onclick="imgSlider('img1.png')" ></li>
+            <li><img src="thumb2.png" onclick="imgSlider('img2.png')" ></li>
+            <li><img src="thumb3.png" onclick="imgSlider('img3.png')" ></li>
+        </ul>
+        <ul class="social">
+            <li><ion-icon name="logo-facebook"></ion-icon></li>
+            <li><ion-icon name="logo-instagram"></ion-icon></li>
+            <li><ion-icon name="logo-twitter"></ion-icon></li>
+        </ul>
+    </section>
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.starbucks'). src = anything;
+        }
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
